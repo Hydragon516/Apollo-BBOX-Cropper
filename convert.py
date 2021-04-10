@@ -53,7 +53,7 @@ for (path, dir, files) in os.walk("./tracking_train_pcd"):
 
                     if new_x < float(line[5]) / 2 and new_x > -float(line[5]) / 2:
                         if new_y < float(line[6]) / 2 and new_y > -float(line[6]) / 2:
-                            if new_y < float(line[7]) / 2 and new_y > -float(line[7]) / 2:
+                            if new_z < float(line[7]) / 2 and new_z > -float(line[7]) / 2:
                                 crop_pc.append([new_x, new_y, new_z])
                 
                 crop_pc = np.array(crop_pc)
